@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "tortoise"
+version = "2.4.5"
+description = "A high quality multi-voice text-to-speech library"
+authors = ["James Betker"]
+license = "Apache Software License"
+readme = "README.md"
+packages = [{include = "tortoise"}]
+
+[tool.poetry.dependencies]
+python = ">3.9"
+tqdm = "*"
+rotary_embedding_torch = "*"
+transformers = "4.29.2"
+tokenizers = "*"
+inflect = "*"
+progressbar = "*"
+einops = "*"
+unidecode = "*"
+scipy = "*"
+librosa = "0.8.1"
+torchaudio = "*"
+threadpoolctl = "*"
+appdirs = "*"
+numpy = "<=1.23.5"
+numba = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
